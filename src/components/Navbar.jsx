@@ -11,7 +11,7 @@ const Navbar = () => {
     const clientId = "4itcs5ls66eleck71rv0afqrkq";
     const origin = window.location.origin;
     const logoutUri = `${origin}/start`;
-    const cognitoDomain = "https://blog-app-dev-domain.auth.eu-central-1.amazoncognito.com";
+    const cognitoDomain = "https://photos-primary.auth.eu-central-1.amazoncognito.com";
     window.location.href = `${cognitoDomain}/logout?client_id=${clientId}&logout_uri=${encodeURIComponent(logoutUri)}`;
   };
 
