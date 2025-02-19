@@ -8,7 +8,7 @@ const Navbar = () => {
   const [isUploadModalOpen, setIsUploadModalOpen] = useState(false);
 
   const signOutRedirect = () => {
-    const clientId = "358ckpo7hs4694e5q6jslgg965";
+    const clientId = "4itcs5ls66eleck71rv0afqrkq";
     const origin = window.location.origin;
     const logoutUri = `${origin}/start`;
     const cognitoDomain = "https://blog-app-dev-domain.auth.eu-central-1.amazoncognito.com";
