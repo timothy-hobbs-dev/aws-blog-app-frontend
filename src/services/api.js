@@ -1,4 +1,4 @@
-const BASE_URL = 'https://g2ogpdiln8.execute-api.eu-central-1.amazonaws.com/Stage';
+const BASE_URL = 'https://api.photos-app.click';
 
 export const api = {
   async uploadImage(file, userData, auth) {
@@ -71,4 +71,16 @@ export const api = {
     });
     return response.json();
   },
+
+  async signup(signupData) {
+    const response = await fetch(`${BASE_URL}/signup`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        // Authorization: `Bearer ${auth?.user?.id_token}`,
+      },
+      body: JSON.stringify(signupData),
+    });
+    return response.json();
+  }
 };
