@@ -5,6 +5,7 @@ import MyPics from './components/MyPics';
 import AllPics from './components/AllPics';
 import RecycleBin from './components/RecycleBin';
 import Landing from './components/Landing';
+import Signup from './components/SignUp';
 
 const App = () => {
   return (
@@ -14,7 +15,7 @@ const App = () => {
         <main className="container mx-auto px-4 py-8">
           <Routes>
             <Route path="/start" element={<Landing />}/>
-            <Route path="/signup" element={<SignUp />} />
+            <Route path="/signup" element={<Signup />} />
             <Route path="/" element={<AllPics />} />
             <Route path="/my-pics" element={<MyPics />} />
             <Route path="/recycle-bin" element={<RecycleBin />} />

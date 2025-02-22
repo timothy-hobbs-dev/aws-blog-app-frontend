@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useAuth } from "react-oidc-context";
 import { ImagePlus, Share2, Trash2, RefreshCw } from "lucide-react";
+import { Link, useLocation } from 'react-router-dom';
 
 const Landing = () => {
   const auth = useAuth();
