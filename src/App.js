@@ -14,6 +14,7 @@ const App = () => {
         <main className="container mx-auto px-4 py-8">
           <Routes>
             <Route path="/start" element={<Landing />}/>
+            <Route path="/signup" element={<SignUp />} />
             <Route path="/" element={<AllPics />} />
             <Route path="/my-pics" element={<MyPics />} />
             <Route path="/recycle-bin" element={<RecycleBin />} />

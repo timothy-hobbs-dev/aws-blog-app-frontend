@@ -62,8 +62,15 @@ const Landing = () => {
                      hover:bg-blue-600 transform hover:scale-105 transition-all duration-200 
                      shadow-lg hover:shadow-xl"
           >
-            Get Started Now
+            Login
           </button>
+          <Link
+            to="/signup"
+            className={`px-3 py-2 rounded-md`}
+          >
+             Sign Up
+          </Link>
+
         </div>
 
         {/* Abstract Shapes */}
